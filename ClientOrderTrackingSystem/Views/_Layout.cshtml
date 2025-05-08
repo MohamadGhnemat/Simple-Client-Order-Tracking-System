@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body style="height:100vh">
+
+    <div class="d-flex flex-column justify-content-between h-100">
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Client Order Tracking System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="margin-left:400px" class="collapse navbar-collapse ml-5" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex gap-3">
+                    <a class="nav-link active" aria-current="page" href="/Product/Index">Products</a>
+                    <a class="nav-link" href="/Order/Index">Orders</a>
+                    <a class="nav-link" href="/User/Index">Users</a>
+                    <a class="nav-link " href="/Client/Index" >Clients</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="mt-5 mx-4">
+        @RenderBody()
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        &copy; Mohamad Ghnemat
+    </footer>
+    
+
+    </div>
+
+	<link href="~/bootstrap/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="~/bootstrap/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="~/bootstrap/twitter-bootstrap/css/bootstrap.rtl.css" rel="stylesheet" />
+	<link href="~/bootstrap/twitter-bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet" />
+	<script src="~/bootstrap/twitter-bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
